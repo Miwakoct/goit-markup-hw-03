@@ -45,6 +45,10 @@ section {
   padding-bottom: 120px;
 }
 
+img {
+  display: block;
+}
+
 /* ===============HEADER===================== */
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -156,21 +160,19 @@ section {
 
 /* ========================================= */
 
-/* ========Section Webstudio goals (hiden)==== */
+/* ========Section Goals (hiden)==== */
 
-.section-goals {
-}
-
-.section-goals-title {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
   margin: -1px;
   border: 0;
+  padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.section-goals-list {
 }
 
 .section-goals-subtitle {
@@ -179,6 +181,7 @@ section {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .section-goals-text {
   color: #434455;
@@ -186,7 +189,14 @@ section {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.section-goals-list {
+  display: flex;
+  gap: 24px;
+}
 
+.section-goals-item {
+  width: calc((100% - 72px) / 4);
+}
 /* ============Section Our team============= */
 
 .section-team {
