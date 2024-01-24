@@ -21,6 +21,8 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -32,18 +34,28 @@ button {
 }
 
 .container {
-  width: 100%;
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1158px;
+  padding: 0 15px;
   margin: 0 auto;
   outline: 2px solid red;
 }
 
-/* ===============HEADER===================== */
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
+/* ===============HEADER===================== */
 .header {
-  padding-top: 24px;
+  border-bottom: 1px soli #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -54,16 +66,25 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .logo-part {
   color: #2e2f42;
 }
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
 .nav-link {
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
 }
 
 .nav-link:hover,
@@ -73,7 +94,14 @@ button {
 
 .address {
   font-style: normal;
+  margin-left: auto;
 }
+
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+
 .address-link {
   color: #434455;
   font-size: 16px;
@@ -94,12 +122,6 @@ button {
   background-color: #2e2f42;
 }
 
-.container hero-container {
-  padding-top: 188px;
-  padding-bottom: 292px;
-  padding-left: 472px;
-  padding-right: 472px;
-}
 .section-hero-title {
   color: #fff;
   text-align: center;
