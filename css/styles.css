@@ -47,7 +47,7 @@ section {
 
 /* ===============HEADER===================== */
 .header {
-  border-bottom: 1px soli #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
   display: flex;
@@ -120,6 +120,8 @@ section {
 
 .section-hero {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .section-hero-title {
@@ -141,6 +143,11 @@ section {
   letter-spacing: 0.04em;
   background-color: #4d5ae5;
   cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 
 .section-hero-btn:focus {
